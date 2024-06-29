@@ -22,6 +22,10 @@ app.get("/youtube", (req, res) => {
   res.send("<h1>Youtube</h1>");
 });
 
+app.get("/test", (req, res) => {
+  res.send("<h1>Test route</h1>");
+});
+
 // Server Listining
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

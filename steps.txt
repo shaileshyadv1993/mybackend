@@ -1,0 +1,4 @@
+npm inint -y (If required)
+create entry file (index.js)
+install express (npm i express)
+install dot env for env variables

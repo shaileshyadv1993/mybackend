@@ -3,6 +3,8 @@ const express = require("express");
 
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 // GET request
 app.get("/", (req, res) => {
   res.send("Hello! World");
@@ -21,6 +23,6 @@ app.get("/youtube", (req, res) => {
 });
 
 // Server Listining
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
